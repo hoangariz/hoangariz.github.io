@@ -3,11 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 60%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 5px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .social-icons i {
+            font-size: 24px;
+        }
+        p{
+         font-weight: bolder ;    
+        }
+        .Hoang{
+            font-size: 30px;
+            font-weight: 30px;
+            
+        }
+    </style>
+    <title>Profile Card</title>
 </head>
 <body>
-<h1 class="text-red-700">hoàng</h1>
-    <a class="text-center text-blue-700" href="https://www.facebook.com/hvfbhoang">facebook</a>
+
+<div class="profile-card">
+    <img class="avatar" src="https://i.ibb.co/YfD0kYF/logosau.png" alt="Avatar">
+    <div class="profile-info">
+        <h2>Tran X Hoang</h2>
+        <p class="Hoang">Coder & Seller</p>
+        <p>Email: tmh.star@hotmail.com</p>
+        <p>Location: Ha Noi, Viet Nam</p>
+        <div class="social-icons">
+            <a href="https://t.me/xhpoor" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.youtube.com/@cskh" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/hvfbhoang" target="_blank"><i class="fab fa-facebook"></i></a>
+            <!-- Add more social media links as needed -->
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
